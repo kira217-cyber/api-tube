@@ -20,7 +20,10 @@
               <img src="assets/Logo.png" alt="">
             </div>
             <div class="navbar-center">
-              <a class="btn bg-stone-200">Sort by view</a>
+              <label class="input">
+                <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2.5" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></g></svg>
+                <input id="search-input" type="search" required placeholder="Search"/>
+              </label>
             </div>
             <div class="navbar-end">
               <button class="btn bg-[#FF1F3D] text-white">Blog</button>              
@@ -33,9 +36,27 @@
           <button id="btn-all" class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white" onclick="loadVideos()">All</button>
           </div>
     </section>
+    <section id="loader" class="text-center py-8 hidden">
+      <span class="loading loading-dots loading-xl"></span>
+    </section>
     <section id="video-container" class="grid grid-cols-4 gap-4">
       
     </section>
+    <!-- Open the modal using ID.showModal() method -->
+<!-- <button class="btn" onclick="my_modal_1.showModal()">open modal</button> -->
+<dialog id="video_details" class="modal">
+  <div class="modal-box">
+    <div id="details-container">
+
+    </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 <script src="scripts/index.js"></script>
 </body>
 </html>
