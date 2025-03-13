@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH-TUBE</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .active{
+        background-color: #FF1F3D;
+        color: white;
+      }
+    </style>
+</head>
+<body class="md:container mx-auto">
+    <section class="mt-7">
+        <div class="navbar">
+            <div class="navbar-start">
+              <img src="assets/Logo.png" alt="">
+            </div>
+            <div class="navbar-center">
+              <a class="btn bg-stone-200">Sort by view</a>
+            </div>
+            <div class="navbar-end">
+              <button class="btn bg-[#FF1F3D] text-white">Blog</button>              
+            </div>
+          </div>
+    </section>
+    <hr class="mt-2 mb-2 text-gray-300">
+    <section>
+        <div id="category-container" class="navbar bg-base-100 flex justify-center gap-4 mb-2">
+          <button id="btn-all" class="btn btn-sm hover:bg-[#FF1F3D] hover:text-white" onclick="loadVideos()">All</button>
+          </div>
+    </section>
+    <section id="video-container" class="grid grid-cols-4 gap-4">
+      
+    </section>
+<script src="scripts/index.js"></script>
+</body>
+</html>
